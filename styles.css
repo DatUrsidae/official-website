@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+  background-color: rgb(199, 199, 207);
+  font-family: "Lato";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.nav-link:hover {
+  background-color: grey;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#title {
+  padding: 10%;
+  background-color: aqua;
+  background-image: url("images/mountainview.jpg");
+}
+
+#about {
+  background-color: white;
+  font-size: 2rem;
+  padding: 10%;
+}
+
+
+.about-icon {
+  font-size: 5rem;
+  color: #283148;
+  margin: 10%;
+}
+
+.about-icon:hover {
+  color: black;
+}
+
+#contact {
+  padding: 10%;
+  background-color: #3c4f65;
+}
+
+.links {
+  color: #283148;
+  margin-top: 10%;
+  
+}
+
+.link {
+padding: 1%;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+#footer {
+  background-color: white;
+  padding: 1%;
+}
