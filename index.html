@@ -53,40 +53,82 @@
     <div class="container-fluid">
       <div class="row">
         <div class="about-box col-lg-4">
+
           <h2><i class="fab fa-accessible-icon about-icon"></i></h2>
           <p>Hello, I am Ursidae.</p>
+          <button class="btn-lg btn-dark info-button" onclick="openBox()">More info</button>
         </div>
         <div class="about-box col-lg-4">
           <h2><i class="fab fa-accessible-icon about-icon"></i></h2>
           <p>I play video games.</p>
+          <button class="btn-lg btn-dark info-button" onclick="openBox()">More info</button>
         </div>
         <div class="about-box col-lg-4">
-          <h2><i class="fab fa-accessible-icon about-icon"></i></h2>
+          <h2><i class="fab fa-accessible-icon about-icon" onclick="openBox()"></i></h2>
           <p>Absolute gaming warlord.</p>
+          <button class="btn-lg btn-dark info-button" onclick="openBox()">More info</button>
         </div>
       </div>
     </div>
   </section>
 
+  <div id="info-box" class="info">
+    <div class="info-content animate">
+      <div class="imgcontainer">
+        <span onclick="closeBox()" class="close" title="Close">&times;</span>
+        <i class="fas fa-address-card info-icon"></i>
+        <h1>About me</h1>
+      </div>
+
+      <div class="container">
+        <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+          dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="form-wrapper" class="form">
+    <form class="form-content animate" action="mailto:datursidae@gmail.com">
+      <div class="imgcontainer">
+        <span onclick="closeForm()" class="close" title="Close">&times;</span>
+        <h1>Contact</h1>
+      </div>
+
+      <div class="container">
+        <input type="text" placeholder="Name" name="name" maxlength="20">
+        <textarea type="text" name="reason" placeholder="Reason" rows="5" cols="14" maxlength="1000"></textarea>
+        <button type="submit" class="btn btn-success btn-submit" title="Submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
   <section id="contact">
     <div class="container-fluid">
       <div class="row">
-        <div class="contact-box col-lg">
-          <h1 class="contact-me">Contact Me</h1>
+        <div class="col-lg-4">
+        </div>
+        <div class="contact-box col-lg-4">
+          <button type="submit" class="btn-lg btn-primary contact-btn" onclick="openForm()">Contact
+            Me</button>
           <h3 class="links"><i class="fab fa-twitter"></i><a class="link" href="https://www.twitter.com/datursidae">
               Twitter</a>
             <i class="fab fa-instagram"></i><a class="link" href="https://www.instagram.com"> Instagram</a>
-            <i class="fab fa-twitch"></i><a class="link" href="https://www.twitch.tv/ursidae"> Twitch</a> <i class="fas fa-envelope"></i><a
-              class="link" href="email1234@gmail.com">
-              Email</a></p>
+            <i class="fab fa-twitch"></i><a class="link" href="https://www.twitch.tv/ursidae"> Twitch</a></p>
         </div>
-      </div>
-    </div>
   </section>
-  
+
   <section id="footer">
     <p>© Copyright Ursidae 2019</p>
   </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
 </body>
 
